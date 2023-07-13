@@ -1,10 +1,14 @@
 // ------------
 // [Is Truthy]
 //-------------
-// set a variable that has the input value from the test list
-const value = "";
 
-// check if the variable is "i am a string". If it is, then print "true" because it is truthy
+// set a variable that has the input value from the test list
+const value = 0;
+
+// print which exercise this is to console to make it easier to read the output
+console.log("\n[Is Truthy] test variable is " + value + ":")
+
+// check if the variable is "I am a string". If it is, then print "true" because it is truthy
 if (value === "I am a string") {
   console.log("true");
 
@@ -29,17 +33,19 @@ if (value === "I am a string") {
     console.log("The empty string is falsy (the only falsy string)")
 
 } else {
-    console.log("hmmm that wasn't one of the examples")
+    console.log("Hmmm that wasn't one of the examples")
 }
 
 
 // --------------
 // [Number Line]
 //---------------
-
 // set two variables that have the input values from the test list
-const num1 = 4;
+const num1 = -5;
 const num2 = 0;
+
+// print which exercise this is to console to make it easier to read the output
+console.log("\n[Number Line] test variables are " + num1 + " and " + num2 + ":")
 
 // add the two numbers together
 const sum = num1 + num2;
@@ -76,24 +82,60 @@ if ( num1 === 50 && sum > 100) {
     console.log("Three is the magic number!")
 }
 
+// -----------------------
+// [Number Line] version 2
+// this can be written more succinctly doing only the
+// comparison and using a variable for the sum
+// in what is output to console
+//------------------------
+
+const v2num1 = -5
+const v2num2 = 0
+
+// print which exercise this is to console to make it easier to read the output
+console.log("\n[Number Line v2] test variables are " + v2num1 + " and " + v2num2 + ":")
+
+const v2sum = v2num1 + v2num2
+
+if (v2sum > 100) {
+
+    console.log(v2sum + " is greater than 100")
+
+} else if ( v2sum > 0 ) {
+
+    console.log(v2sum + " is greater than 0")
+
+} else if ( v2sum === 0 ) {
+
+    console.log(v2sum + " is equal to 0")
+
+} else if ( v2sum < 0 ) {
+
+    console.log(v2sum + " is a negative number")
+
+}
+
+
 // --------------
 // [Greater than 5]
 //---------------
 
-// set two variables that have the input values from the test list
-const greater1 = 0
-const greater2 = 0
+// set two variables that have input values from the test list
+const greater1 = 5
+const greater2 = 5
 
-// add the two numbers together
-// and see whether the result is greater than equal to 5
-if ( greater1 === 6 && greater2 === 4) {
-    console.log("false")
-}
-else if ( greater1 + greater2 >= 5) {
-    console.log("true")
-    // or not
-} else if (greater1 + greater2 < 5) {
-    console.log("false")
+// print which exercise this is to console to make it easier to read the output
+console.log("\n[Greater than 5] test variables are " + greater1 + " and " + greater2 + ":")
+
+// check whether the first variable is greater than 5 AND if the second one is greater than 5
+ if ( greater1 >= 5 && greater2 >=5 ) {
+
+    // print true if both values are greater than 5
+    console.log(true)
+
+    // print false if they're not
+} else {
+    console.log(false)
 }
 
 // -------------------
@@ -105,6 +147,9 @@ param1A = "cake"
 param1B = "cake"
 param2A = "pie"
 param2B = "pie"
+
+// print which exercise this is to console to make it easier to read the output
+console.log("\n[Pair and Compare] test variables are " + param1A + ", " + param1B + ", " + param2A + ", and " + param2B + ":")
 
 // check if the first two variables are equal OR if the second two variables are equal
 if ( param1A === param1B || param2A === param2B) {
